@@ -10,7 +10,7 @@ const Update = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault()
         try {
-            let response = await axios.put(`http://localhost:3001/update/${id}`,{task,description})
+            let response = await axios.put(`https://full-stack-todo-app-2n99.vercel.app/${id}`,{task,description})
             console.log(response.data);
             navigate("/")
         } catch (error) {
