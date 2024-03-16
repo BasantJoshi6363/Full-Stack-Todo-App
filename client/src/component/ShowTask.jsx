@@ -10,7 +10,7 @@ const ShowTask = () => {
 
     const handleSubmit = async()=>{
         try {
-           const response=  await axios.post("https://full-stack-todo-app-2n99.vercel.app//create",{task,description})
+           const response=  await axios.post("https://full-stack-todo-app-2n99.vercel.app/create",{task,description})
             console.log(response.data);
             setDescription('')
             setTask("")
@@ -23,7 +23,7 @@ const ShowTask = () => {
     useEffect(() => {
         const showTask = async () => {
             try {
-                let response = await axios.get("https://full-stack-todo-app-2n99.vercel.app//task")
+                let response = await axios.get("https://full-stack-todo-app-2n99.vercel.app/task")
                 setOutput(response.data.task)
 
             } catch (error) {
