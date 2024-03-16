@@ -23,7 +23,7 @@ const ShowTask = () => {
     useEffect(() => {
         const showTask = async () => {
             try {
-                let response = await axios.get("https://full-stack-todo-app-2n99.vercel.app/task")
+                let response = await axios.get("https://basant-todo-app.vercel.app/task")
                 setOutput(response.data.task)
 
             } catch (error) {
