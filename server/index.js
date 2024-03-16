@@ -10,12 +10,7 @@ dotenv.config({
 let app = express();
 
 app.use(express.json());
-app.use(cors({
-  origin:["https://full-stack-todo-app-wvfc.vercel.app"],
-  methods : ["POST","GET"],
-  credentials : true
-  }
-));
+app.use(cors())
 app.use("/", taskRouter);
 let port = process.env.PORT;
 connectionTODatabase();
