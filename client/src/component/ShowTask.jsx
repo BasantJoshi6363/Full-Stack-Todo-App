@@ -56,7 +56,6 @@ const ShowTask = () => {
                                     </div>
                                     <Link to={`/update/${value._id}`}><button className='bg-orange-300 rounded-md text-white text-[12px] p-1 font-bold '>Update</button></Link> <br />
                                     <Link to={`/delete/${value._id}`}><button className='bg-orange-300 rounded-md text-white text-[12px] p-1 font-bold '>Delete</button></Link> <br />
-
                                 </li>
                             </ul>
                         </div>
