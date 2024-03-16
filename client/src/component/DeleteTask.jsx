@@ -8,7 +8,7 @@ const DeleteTask = () => {
     useEffect(()=>{
         const delteTodo = async()=>{
             try {
-                let response = await axios.delete(`http://localhost:3001/delete/${id}`)
+                let response = await axios.delete(`https://full-stack-todo-app-2n99.vercel.app//${id}`)
                 console.log(response.data);
                 navigate("/")
             } catch (error) {
